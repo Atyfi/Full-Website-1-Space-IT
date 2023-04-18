@@ -1,0 +1,884 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(images/HeaderImg.jpg);
+    background-size: cover;
+    overflow: hidden;
+    transform: rotate(180deg);  
+}
+
+.header svg {
+    position: absolute;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 188px;
+    transform: rotateY(180deg);
+}
+
+.header .shape-fill {
+    fill: #FFFFFF;
+}
+
+.header h1{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 8vw;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(180deg) ;
+}
+
+.header h1:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+.header h1::selection{
+    background-color: transparent;
+}
+
+.menu1Nav{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    transform:rotate(180deg);
+    width: 100%;
+}
+
+.menu1Nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu1Nav ul li{
+    position: relative;
+    margin-left: 20px;
+    color: white;
+    font-size: 1.5em;
+    height: 100%;
+    cursor: pointer;
+}
+
+.menu1Nav ul li::selection{
+    background-color: transparent;
+}
+
+.menu1Nav ul li:nth-child(3){
+    margin-left: auto;
+    opacity: 0.8    
+}
+
+.menu1Nav ul li:nth-child(3):hover{
+    opacity: 1    
+}
+
+.menu1Nav ul li:nth-child(4){
+    opacity: 0.8    
+}
+
+.menu1Nav ul li:nth-child(4):hover{
+    opacity: 1    
+}
+
+.menu1Nav ul li:nth-child(5){
+    opacity: 0.8    
+}
+
+.menu1Nav ul li:nth-child(5):hover{
+    opacity: 1    
+}
+
+
+.menu1Nav ul li:nth-child(6) img{
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+}
+
+.menu1Nav ul li:nth-child(6) img:hover{
+    opacity: 1    
+}
+
+.menu1Nav ul li:nth-child(7){
+    margin-right: 50px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);    
+}
+
+.menu1Nav ul li:nth-child(7):hover{
+    background-color: rgba(179, 173, 173, 0.5);    
+}
+
+.menu1Nav ul li:nth-child(7):active{
+    background-color: rgba(179, 173, 173, 0.5);
+    color: black;    
+}
+
+.menu1Nav ul li:nth-child(8){
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.menu1Nav ul li:nth-child(8) img{
+    width: 30px;
+    height: 30px;
+}
+
+.menu1Nav ul li a{ 
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu1Nav ul li a:hover{
+    color: gray;
+}
+
+.menu1Nav ul li a:active{
+    color: black;
+}
+
+input{
+    position: relative;
+    width: 30vw;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 20px
+}
+
+input:focus-visible{
+    outline:none;
+}
+
+.menu2Nav{
+    width: 300px;
+    height: 50vh;
+    background-color: rgb(41, 39, 39);
+    position: absolute;
+    bottom: 15%;
+    transform:rotate(180deg);
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.2;
+}
+
+.menu2Nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.menu2Nav ul li{
+    position: relative;
+    margin-left: 20px;
+    color: white;
+    font-size: 1.5em;
+    height: 100%;
+    cursor: pointer;
+}
+
+.menu2Nav ul li:hover{
+    color: rgb(41, 41, 255);
+}
+
+.menu2Nav ul li a{
+    color: white;
+    text-decoration: none ;
+}
+
+.menu2Nav ul li a:hover{
+    color: rgb(41, 41, 255);
+}
+
+/* Analize */
+.analize{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analize .boxes{
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.analize .boxes .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(41, 39, 39);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    color: white;
+    margin: 10px;
+}
+
+.analize .boxes .box p{
+    margin-top: 30px;
+}
+
+.analize .boxes .box img{
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.analize .boxes .box .navar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(41, 41, 255);
+    border-radius: 10px;
+}
+
+/* API */
+.Api{
+    position: relative;
+    width: 100%;
+}
+
+.Api-header{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.Api-header h1{
+    font-size: 4em;
+}
+
+.Api-header p{
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.Apis{
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.context{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.context .context-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.context .context-header img{
+    width: 100%;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 3s;
+}
+
+.context:hover .image1{
+    scale: 1.2;
+}
+
+.context .context-footer{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+}
+
+
+.context .context-footer p{
+    margin-top: 10px;
+    height: 70px;
+    overflow: auto;
+    padding-right: 30px;
+}
+
+.context .context-footer p::-webkit-scrollbar{
+    width: 3px;
+}
+
+.context .context-footer p::-webkit-scrollbar-track{
+    background-color: gray;
+}
+
+.context .context-footer p::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+
+
+.context a{
+    background-color: rgb(41, 41, 255);
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom:3%;
+    right: 3%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.context a:hover{
+    background-color: transparent;
+    border: 1px solid rgb(41, 41, 255);
+    color: black;
+}
+
+.context a:active{
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+/* Learn */
+.learn {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(41, 39, 39);
+    overflow: hidden;
+}
+
+.learn svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.learn .shape-fill {
+    fill: #FFFFFF;
+}
+
+.learn h1{
+    position: relative;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.learn .guidness{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    z-index: 2;
+}
+
+.learn h2{
+    color: white;
+    line-height: 2;
+}
+
+.learn .devApi{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.learn .devApi button{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.learn .devApi button:hover{
+    background-color: rgb(14, 13, 13);    
+}
+
+.learn .devApi button:active{
+    background-color: white;
+    color: black;    
+}
+
+.apiIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-20%);
+    scale: 2;
+    z-index: 1;
+}
+
+.learn .learnStart{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn .learnStart button{
+
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 30px;
+    z-index: 2;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.learn .learnStart .Tutorials{
+    background-color: black;
+}
+
+.learn .learnStart .Tutorials:hover{
+    background-color: rgb(26, 24, 24);
+}
+
+.learn .learnStart .Tutorials:active{
+    background-color: white;
+    color: black;    
+}
+
+.learn .learnStart .letsStart{
+    background-color: rgb(41, 41, 255);
+}
+
+.learn .learnStart .letsStart:hover{
+    background-color: rgb(30, 30, 179);    
+}
+
+.learn .learnStart .letsStart:active{
+    background-color: white;
+    color: black;    
+}
+
+/* Testimonials */
+
+.testimonials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials h1{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+.testimonials .messages{
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonials .messages .message{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to right,rgb(41, 39, 39),rgb(41, 41, 255));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    color: white;
+    margin: 10px;
+}
+
+.testimonials .messages .message .m-head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.testimonials .messages .message .m-head img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.testimonials .messages .message .m-head h3{
+    margin-left: 10px;
+}
+
+.testimonials .messages .message .m-foot{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.footer h1{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+.description{
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.copyright{
+    text-decoration-line: underline;
+    margin-bottom: 30px;
+}
+
+.footer .socials{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer .socials img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.footer .socials img:hover{
+    opacity: 1;
+}
+
+/* Theme */
+
+/* Analize */
+.darkMode .analize{
+    background-color: black;
+    fill: black;
+}
+/* Header */
+.darkMode .header .shape-fill{
+    fill: black;    
+}
+/* Api */
+.darkMode .Api{
+    background-color: black;
+    color: white;
+}
+
+.darkMode .Api .context{
+    border: 1px solid white;
+    background-color: rgb(41, 39, 39);
+}
+/* Learn */
+.darkMode .learn .shape-fill{
+    fill: black;
+}
+/* Testimonials */
+.darkMode .testimonials{
+    background-color: black;
+}
+/* footer */
+.footer{
+    border-top: 1px solid white;
+    background-color: rgb(12, 12, 12);
+}
+
+@keyframes themeAnime1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes themeAnime2 {
+    0%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+/* Responsive (media query) */
+@media only screen and (max-width: 992px){
+
+    /* header */
+    .header h1{
+        font-size: 10vw;    
+    }
+
+    /* li*/
+    .menu1Nav ul li:nth-child(3){
+        display: none;    
+    }
+    .menu1Nav ul li:nth-child(4){
+        display: none;            
+    }
+    .menu1Nav ul li:nth-child(5){
+        display: none;        
+    }
+    .menu1Nav ul li:nth-child(6){
+        margin-left: auto;
+    }
+    .menu1Nav ul li:nth-child(7){
+        margin-right: 0px;       
+    }
+    .menu1Nav ul li:nth-child(8){
+        margin-right: 50px;
+        display: flex;
+    }
+    
+    /* nav */
+    .menu2Nav{
+        left: 3vw;
+    }
+
+    /* li 2 */
+    .menu2Nav ul li:nth-child(1){
+        display: none
+    }
+    .menu2Nav ul li:nth-child(2){
+        display: none
+    }
+
+    /* search */
+    input{
+        width: 40vw;
+        height: 50px;
+        font-size: 18px
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    /* header */
+    .header h1{
+        font-size: 12vw;    
+    }
+
+    /* li */
+    .menu1Nav ul li:nth-child(6){
+        display: none;
+    }
+    .menu1Nav ul li:nth-child(7){
+        display: none;      
+    }
+    .menu1Nav ul li:nth-child(8){
+        margin-left: auto;
+        margin-right: 50px;
+    }  
+    
+    /* nav */
+    .menu2Nav{
+        line-height: 2;
+    }
+
+    /* li 2 */
+    .menu2Nav ul li:nth-child(1){
+        display: block
+    }
+    .menu2Nav ul li:nth-child(2){
+        display: block
+    } 
+
+    /* search */
+    input{
+        width: 60vw;
+        font-size: 16px
+    }
+
+    /* learn */
+    .learn .devApi{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+
+    /* header */
+    .header h1{
+        font-size: 14vw;    
+    }
+
+    /* li */
+    .menu1Nav ul li:nth-child(8){
+        margin-right: 30px;
+    }  
+
+    /* nav */
+    .menu2Nav{
+        width: 100%;
+        left: 0%;
+        transform: rotate(180deg) ;
+    }    
+
+    /* search */
+    input{
+        width: 60vw;
+        font-size: 14px
+    }
+}
+
+/* mobile L */
+@media only screen and (max-width: 425px){
+
+    /* header */
+    .header h1{
+        font-size: 16vw;    
+    }
+
+    /* li */
+    .menu1Nav ul li:nth-child(8){
+        margin-right: 20px;
+    }  
+
+    /* search */
+    input{
+        width: 50vw;
+    }    
+}
+
+/* mobile M */
+@media only screen and (max-width: 375px){
+
+    /* header */
+    .header h1{
+        font-size: 16vw;    
+    }
+
+    /* li */
+    .menu1Nav ul li:nth-child(1){
+        display: none;
+    } 
+    .menu1Nav ul li:nth-child(8){
+        margin-right: 20px;
+    }  
+
+    /* search */
+    input{
+        width: 70vw;
+    }   
+    
+    /* learn */
+    .learn .learnStart{
+        position: absolute;
+        top: 40%;
+        right: 2%;
+        font-size: 1em;
+    }
+
+    .learn .learnStart button{
+        height: 135px;
+        padding: 20px;
+        z-index: 2;
+        cursor: pointer;
+        margin-top: 10px;
+    } 
+}
+
+/* mobile S */
+@media only screen and (max-width: 320px){
+
+    /* header */
+    .header h1{
+        font-size: 16vw;    
+    }
+
+    /* li */
+    .menu1Nav ul li:nth-child(1){
+        display: none;
+    } 
+    .menu1Nav ul li:nth-child(8){
+        margin-right: 20px;
+    }  
+
+    /* search */
+    input{
+        width: 70vw;
+    }
+
+}
